@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Conhecimentos</h2>
+    <ul>
+        @for (knowledgePath of arrayKnowledge(); track knowledgePath;) {
+            <li>
+                <img 
+                    [src]="knowledgePath.src" 
+                    [alt]="knowledgePath.alt" 
+                    loading="lazy" 
+                    width="22px" 
+                    height="24px"
+                />
+            </li>
+        }
+    </ul>
+</div>
