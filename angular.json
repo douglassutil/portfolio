@@ -98,7 +98,13 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "portfolio:build:production",
+            "baseHref": "https://douglassutil.github.io/portfolio/browser",
+            "name": "douglassutil",
+            "email": "douglassutil@gmail.com"
+          }
         }
       }
     }
